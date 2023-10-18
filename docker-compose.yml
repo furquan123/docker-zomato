@@ -1,0 +1,11 @@
+version: '3'
+services: 
+  train:
+    image: fk23/zomatotrain:v1
+    ports:
+      - "8000:80"
+
+  blinkit:
+    image: fk23/zomatoblinkit:v1
+    ports:
+      - "8001:80"  
